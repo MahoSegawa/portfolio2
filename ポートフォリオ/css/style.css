@@ -1,0 +1,583 @@
+@charset "utf-8";
+
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #333333;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;}
+
+body {
+    background: #fafafa;
+    height: 100%;
+    }
+.width{
+    padding: 0px 10px 0px 10px; 
+}
+
+/* ヘッダー */
+.header-logo{
+    width: 55px;
+    padding-top:20px;
+}
+.header-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 15px;
+    z-index: 100;
+    padding-left:80px;
+}
+
+.pc-nav ul {
+    display: flex;
+}
+.pc-nav li:first-child {
+    padding-left:50px;
+}
+.sp-nav{
+    display: none;
+}
+.nav-item a{                                                                                                                                     
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight:normal;
+    width: 120px;
+    text-align: center;
+    
+}
+.nav-item{
+    padding-left: 20px;
+    
+}
+.icon a{
+    display: block;
+    color: #fff;
+    margin-left:40px;
+}
+.fv{
+    background-image: url(../images/fv-back-pc.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-position: top 0px right 0px; */
+    min-height: 600px;
+    background-position: center right;
+}
+.fv-bg{
+    background-color: #333333;
+}
+.fv-text{
+    display: inline-block;
+    text-align: center;
+
+}
+  /* 重ねる文字の基本設定 */
+  
+  .fuchidori{
+    color: transparent;
+    padding: 40px 0;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+  }
+  .fv-text h2{
+    padding-top: 200px;
+    padding-left: 200px;
+    text-align: left;
+    font-size: 50px;;
+    font-weight: bold;
+    color: #fff;
+    line-height:1.7
+  }
+  .fv-text p{
+    font-size: 18px;
+    text-align: left;
+    font-weight: bold;
+    color: #fff;
+    padding-left: 200px;
+    padding-top: 30px;
+    line-height: 1.75;
+  }
+
+/* about */
+.about-title{
+    text-align: center;
+    margin-top: 80px;
+    letter-spacing: 0.1em;
+}
+
+.about-title-en{
+    font-family:"Lato",sans-serif;
+    font-weight: normal;
+    font-size:40px;
+    margin-top: 80px;
+}
+
+.about-title-ja{
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: normal;
+}
+.about-container{
+    display: flex;
+    align-items: center; 
+    justify-content:space-between;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.about-img{
+    width: 25%;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+.sp-about-img{
+    display:none;
+}
+.message{
+    width:45%;
+}
+.message h3{
+    margin-bottom:30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.message p {
+    line-height:1.7;
+    padding-bottom: 60px;
+}
+
+/* service */
+
+#service{
+    background-image: url(../images/service-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: top 0px right 0px; */
+    min-height: 750px;
+    margin-bottom: 70px;
+
+}
+.service-title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.service-title span{
+    font-family:"Lato",sans-serif;
+    font-size:40px;
+    font-weight:normal;
+    color:#fff;
+    letter-spacing: 0.1em;
+}
+.service-title h2{
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 10px;
+    color: #fff;
+    letter-spacing: 0.1em;
+}
+.service-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin: 0 auto;
+    max-width: 1040px;
+}
+.item{
+    width: 32%;
+    height: 360px;
+    background-color: #fff;
+    text-align: center;
+}
+.item h3{
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    padding-top:35px;
+    padding-bottom: 5px;
+}
+.item p{
+    display: inline-block;
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+    width: 255px;
+    text-align: left;
+
+}
+.service-bg{
+    padding-top: 80px;
+}
+/* .design-pc,.grafic-pc,.coding-pc{
+    display: inline-block;
+    height: 100px;
+    padding-top: 10px;
+
+} */
+.design-pc,.grafic-pc,.coding-pc{
+    height: 116px;
+    width: 180px;
+    padding-top: 10px;
+}
+
+
+.design-sp,.grafic-sp,.coding-sp{
+    display: none;
+}
+/* works */
+.works-title{
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+.works-title span{
+    font-family:"Lato",sans-serif;
+    font-size:40px;
+    font-weight:normal;
+    letter-spacing: 0.1em;
+}
+.works-title h2{
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 10px;
+    letter-spacing: 0.1em;
+}
+.works-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin: 0 auto;
+    max-width: 1040px;
+    
+}
+.works-item{
+    width: 32%;
+    text-align: left;
+}
+.works-item h3{
+    font-size: 20px;
+    font-weight: normal;
+    padding-top:35px;
+    padding-bottom: 10px;
+}
+.works-item p{
+    display: inline-block;
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+    width: 313px;
+    overflow-wrap: break-word;
+    margin-bottom: 100px;
+}
+
+.work1,.work2,.work3{
+    display: inline-block;
+    height: 360px;
+    }
+
+/* PC表示/1300px */
+@media  screen and (max-width: 1300px){
+    .pc-nav{
+        display: none;
+    }
+    .btn{
+        display: block;
+        position: absolute;
+        top:5px;
+        right: 50px;
+        cursor: pointer;
+        height: 32px;
+        margin-top: 30px;
+        margin-right: 30px;
+        z-index: 100;
+    }
+    .btn span{
+        display: block;
+        background:#606060;
+        width: 33px;
+        height: 3px;
+        position: relative;
+        top: 15px;
+        transition: 0.3s;
+    }
+    .btn span::before,
+    .btn span::after {
+        content: "";
+        display: block;
+        background:#606060;
+        width: 33px;
+        height: 3px;
+        position: absolute;
+        transition: 0.3s;
+    }
+    .btn span::before{
+        bottom: 10px;
+    }
+    .btn span::after{
+        top:10px
+    }
+    .open span{
+        background: transparent;
+      }
+      .open span::before{
+      bottom: 0px;
+      transform: rotate(45deg);}
+  
+      .open span::after{
+      top:0px;
+      transform: rotate(135deg);}
+
+    .sp-nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 120vh;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    .sp-nav ul{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .sp-nav ul li a{
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        display: block;
+        font-size: 25px;
+    } 
+    .fv-text h2{
+        font-size: 45px;
+    }
+} 
+
+@media screen and (min-width:1000px) and (max-width:1150px){
+    .fv-text h2{
+        padding-top: 200px;
+        padding-left: 100px;
+        font-size: 35px;
+      }
+      .fv-text p{
+        font-size: 18px;
+        padding-left: 100px;
+        padding-top: 30px;
+        line-height: 1.75;
+      }
+      .header-logo{
+        width: 55px;
+        padding-left:20px;
+}}
+/* PC表示/1000px */
+@media screen and (min-width:767px) and (max-width:1000px){
+    .fv-text h2{
+        padding-left: 60px;
+        font-size: 30px;
+      }
+      .fv-text p{
+        font-size: 14px;
+        padding-left: 60px;
+      }
+      .header-container{
+          padding-left: 60px;
+      }
+}
+/* PC表示767px */
+@media screen and (max-width:767px){
+    .fv-text{
+        display:block;
+    }
+    .fv-text h2{
+        padding-left: 80px;
+        padding-top: 350px;
+        font-size: 30px;
+      }
+    .fv-text p{
+        font-size: 14px;
+        padding-left: 80px;
+      }
+      .btn{
+          margin: 40px 0px 0px 0px;
+      }
+      /* about */
+      .about-container{
+          display: block;
+          text-align: center;
+      }
+      .about-img{
+          width: 254px;
+          margin-bottom: 50px;
+          padding: 45px 0px 0px 0px;
+      }
+      .message{
+          margin: 0 auto;
+          width: 332px;
+      }
+      .message h3 {
+          text-align: center;
+      }
+      .message p {
+          text-align: left;
+      }
+      .about-title-ja{
+          margin-top: 5px;
+
+      }
+      /* service */
+      .service-wrap{
+          display: block;
+      }
+      .service-title h2{
+          margin-top: 5px;
+      }
+      .item{
+          margin: 0 auto;
+          width: 335px;
+          margin-bottom: 50px;
+      }
+      .service-bg{
+          height: 1600px;
+          padding-top: 40px;
+      }
+      /* works */
+      .works-title h2{
+          margin-top: 5px;
+      }
+      .works-title{
+          margin-top: 0px;
+
+      }
+    }
+    
+
+/* SP表示375px*/
+@media screen and (max-width:375px){
+    .fv-bg{
+        background-image: url(../images/sp-fv-bg2.png);
+    }
+    .btn{
+        margin:auto;
+        padding-top: 30px;
+        right: 20px;
+    }
+  
+    .fv-text h2{
+        text-align: left;
+        padding-left: 20px;
+        padding-top:400px ;
+        font-size: 33px;
+        line-height: 1.4;
+      }
+    .fv-text p{
+        font-size: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        
+    }
+
+    .header-logo{
+        width: 40px;
+        padding-top: 18px;
+
+    }
+    .header-container{
+        padding-left: 20px;
+    }
+    .sp-br{
+        display: none;
+    }
+    .sp-nav ul li a{
+        font-size: 18px;
+    }
+}
+    
+
+
+/* PC表示1700px */
+@media screen and (min-width: 1700px){
+    .fv-bg{
+    background-color: #333333;
+}
+
+.header-logo{
+    padding-left: 40px;
+}
+
+.fv-text h2{
+    padding-top: 150px;
+    padding-left: 300px;
+    font-size: 70px;;
+  }
+.fv-text p{
+    font-size: 25px;
+    padding-left: 300px;
+}
+.nav-item a{                                                                                                                                     
+    width: 150px;
+    }
+.nav-item{
+    padding-left: 30px;  
+    
+}
+.icon a{
+    display: block;
+    color: #fff;
+    margin-left:45px;
+}
+.header-container{
+    margin-top: 20px;
+    padding-right: 50px;
+    
+}
+.pc-nav li:first-child {
+        padding-left :100px;
+    }
+}
