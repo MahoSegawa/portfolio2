@@ -119,11 +119,28 @@ body {
 }
   /* 重ねる文字の基本設定 */
   
-  .fuchidori{
-    color: transparent;
-    padding: 40px 0;
-    -webkit-text-stroke: 1px rgb(255, 255, 255);
+
+  .fuchidori text {
+    font-weight       : bold;
+    font-size         :50px;
+    font-family       :"游ゴシック体", YuGothic, "游ゴシック Medium",
+    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    stroke:#fff;
+    fill:#333;
+    letter-spacing:2px;
+    text-anchor:middle;
+    dominant-baseline : alphabetic;
   }
+
+  .fuchidori > svg > use:nth-of-type(1) {
+    stroke-width      : 3px;
+    paint-order       : stroke;
+    stroke-linejoin   : round ;
+  }
+  .fuchidori > svg > use:nth-of-type(2) {
+    stroke-width      : 0;
+  }
+
   .fv-text h2{
     padding-top: 200px;
     padding-left: 200px;
@@ -146,7 +163,7 @@ body {
 /* about */
 .about-title{
     text-align: center;
-    margin-top: 80px;
+    padding-top: 80px;
     letter-spacing: 0.1em;
 }
 
@@ -294,12 +311,6 @@ body {
     margin: 0 auto;
     max-width: 1040px;
 }
-
-.git-icon a{
-    display: block;
-    color: #333;
-    margin-left:40px;
-}
 .works-wrap2{
     display: flex;
     justify-content: space-between;
@@ -307,8 +318,12 @@ body {
     margin: 0 auto;
     max-width: 1040px;
     margin-bottom: 90px;
-    
 }
+.git{
+    color: skyblue;
+    text-decoration: underline;
+      }
+
 .works-wrap3{
     display: flex;
     justify-content: space-between;
@@ -326,9 +341,11 @@ body {
     width: 32%;
     text-align: left;
 }
+
 .works-item3{
     width: 32%;
-    text-align: left;}
+    text-align: left;
+}
 
 .works-item h3{
     font-size: 20px;
@@ -376,24 +393,20 @@ body {
     display: inline-block;
 }
 
-/* article {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  } */
-  
-  button {
+  .more-btn {
     display: block;
     width: 232px;
-    height: 54px;
     margin: 20px auto;
     color: #fff;
+    text-align: center;
+    padding-top: 19px;
+    padding-bottom: 19px;
     border: 0;
     background-color: #333;
     cursor: pointer;
     margin-bottom: 100px;
   }
+
 /* contact */
 .contact-title{
     text-align: center;
@@ -549,6 +562,7 @@ body {
     color: #fff;
     font-weight:normal;
     font-size: 14px;
+    cursor: pointer;
   }
 
   @media screen and (max-width: 480px) {
@@ -588,12 +602,36 @@ body {
     padding:0 20px ;
 }
 
-.page-top img {
-    width: 100px;
-    position:fixed;
-    right: 80px;
-    bottom: 150px;
-  }
+#top-btn{
+    position: fixed;
+    bottom: 200px;
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:  100px;
+    height: 100px;
+    border-radius: 50%;;
+    background: #616161;
+    color: #fff;
+    z-index: 1000;
+ }
+
+ /* 矢印 */
+ 
+ .arrow{
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transform: rotate(-45deg);
+    margin-top: 5px;
+    
+ }
+ .top-text{
+     padding-left: 5px;
+ }
+
 
   .footer-container{
       padding-top: 50px;
@@ -623,7 +661,7 @@ body {
     }
     .btn span{
         display: block;
-        background:#606060;
+        background:#fff;
         width: 33px;
         height: 3px;
         position: relative;
@@ -634,7 +672,7 @@ body {
     .btn span::after {
         content: "";
         display: block;
-        background:#606060;
+        background:#fff;
         width: 33px;
         height: 3px;
         position: absolute;
@@ -651,11 +689,13 @@ body {
       }
       .open span::before{
       bottom: 0px;
-      transform: rotate(45deg);}
+      transform: rotate(45deg);
+      }
   
       .open span::after{
       top:0px;
-      transform: rotate(135deg);}
+      transform: rotate(135deg);
+      }
 
     .sp-nav{
         position: absolute;
@@ -681,6 +721,10 @@ body {
     } 
     .fv-text h2{
         font-size: 45px;
+    }
+    .open span::before,
+    .open span::after{
+        background: #fff;
     }
 } 
 
