@@ -308,14 +308,14 @@ body {
     margin-top: 10px;
     letter-spacing: 0.1em;
 }
-.works-wrap {
+.works-item {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
     margin: 0 auto;
     max-width: 1040px;
 }
-.works-wrap2{
+.works-item2{
     display: flex;
     justify-content: space-between;
     padding-top: 60px;
@@ -337,11 +337,11 @@ body {
     margin-bottom: 90px;
     
 }
-.works-item{
+.works-item li{
     width: 32%;
     text-align: left;
 }
-.works-item2 {
+.works-item2 li{
     width: 32%;
     text-align: left;
 }
@@ -393,9 +393,7 @@ body {
     width: 332px;
     overflow-wrap: break-word;
 }
-.work1 img,.work2 img,.work3 img,.work4 img,.work5 img,.work6 img{
-    display: inline-block;
-}
+
 
   .more-btn {
     display: block;
