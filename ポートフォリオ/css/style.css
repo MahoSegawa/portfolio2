@@ -117,51 +117,27 @@ body {
     text-align: center;
 
 }
-  /* 重ねる文字の基本設定 */
-  
-
-  .fuchidori{
-    font-weight       : bold;
-    font-size         :50px;
-    font-family       :"游ゴシック体", YuGothic, "游ゴシック Medium",
-    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    stroke:#fff;
-    fill:#333;
-    letter-spacing:2px;
-    /* text-anchor:middle; */
-    dominant-baseline : alphabetic;
-    margin-top: 40px;
-  }
-  /* .de{
-      margin-left: 300px;
-  } */
-
-  .fuchidori > svg > use:nth-of-type(1) {
-    stroke-width      : 3px;
-    paint-order       : stroke;
-    stroke-linejoin   : round ;
-  }
-  .fuchidori > svg > use:nth-of-type(2) {
-    stroke-width      : 0;
-  }
-
   .main-text{
-    padding-left: 200px;
-    text-align: left;
-    font-size: 50px;;
-    font-weight: bold;
-    color: #fff;
-    line-height:1.7;
+      width: 550px;
+      padding-left: 200px;
+      padding-top: 200px;
   }
+  .svg{
+    width:100%;
+    max-width: 100%;
+    height: auto;
+    }
+
   .fv-text p{
     font-size: 18px;
     text-align: left;
     font-weight: bold;
     color: #fff;
     padding-left: 200px;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 100px;
     line-height: 1.75;
+    letter-spacing: 0.1em;
   }
 
 /* about */
@@ -646,7 +622,7 @@ body {
 }
 
 /* PC表示/1300px */
-@media  screen and (max-width: 1300px){
+@media  screen and (max-width: 1330px){
     .pc-nav{
         display: none;
     }
@@ -728,7 +704,14 @@ body {
     .open span::after{
         background: #fff;
     }
-} 
+    .main-text{
+            width:100%;
+            max-width: 100%;
+            height: auto;
+            width: 470px;
+            }
+    }
+
 
 @media screen and (min-width:1000px) and (max-width:1150px){
     .fv-text h2{
@@ -832,6 +815,30 @@ body {
           margin-top: 0px;
 
       }
+      .works-item{
+          display: block;
+      }
+      .works-item2{
+          display: block;
+      }
+      .works-item li{
+          margin: 0 auto;
+          width: 335px;
+          margin-bottom: 50px;
+      }
+      .works-item2 li{
+          margin: 0 auto;
+          width: 335px;
+          margin-bottom: 50px;
+      }
+      .works-item3{
+        display: block;
+    }
+    .works-item3 li{
+        margin: 0 auto;
+        width: 335px;
+        margin-bottom: 50px;
+    }
 
       /* フッター */
       .page-top img {
@@ -840,32 +847,90 @@ body {
         right: 10px;
         bottom: 10px;
       }
+      .footer-nav{
+          display: flex;
+      }
+      .footer-container .footer-nav li{
+          padding-top: 30px;
+      }
+
     }
     
+/* SP表示550px */
 
-/* SP表示375px*/
-@media screen and (max-width:375px){
+@media screen and (max-width: 550px) {
     .fv-bg{
-        background-image: url(../images/sp-fv-bg2.png);
+        background-image: url(../images/fv-irast.png);
+    }
+    /* .fv-text h2{
+        padding-left: 20px;
+        padding-top: 350px;
+        font-size: 30px;
+        text-align: left;
+      } 
+    } */
+    .fv-text h2{
+        width: 335px;
+        text-align: left;
+        padding-top:400px;
+        padding-left: 20px;
+    }
+    .fv-text p{
+        font-size: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 50px;}
+        
+    .header-logo {
+        width: 40px;
+        padding-top:18px;}
+
+    .header-container{
+        padding-left: 20px;
+    }
+    .sp-br{
+        display: none;
     }
     .btn{
         margin:auto;
         padding-top: 30px;
         right: 20px;
     }
-  
+    .btn span::before,
+    .btn span::after,
+    .btn span {
+        background: #333333;
+    }
+    #top-btn{
+        width: 80px;
+        height: 80px;
+        right: 20px;
+        bottom: 50px;
+    }
+    
+/* SP表示375px*/
+@media screen and (max-width:375px){
+    /* .fv-bg{
+        background-image: url(../images/sp-fv-bg2.png);
+    } */
+    .btn{
+        margin:auto;
+        padding-top: 30px;
+        right: 20px;
+        color: #333333;
+    }
     .fv-text h2{
+        width: 335px;
         text-align: left;
-        padding-left: 20px;
-        padding-top:400px ;
-        font-size: 33px;
-        line-height: 1.4;
-      }
+        padding-top:400px
+    }
     .fv-text p{
-        font-size: 16px;
+        font-size: 15px;
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 20px;
+        padding-bottom: 50px;
         
     }
 
@@ -926,4 +991,4 @@ body {
 .pc-nav li:first-child {
         padding-left :100px;
     }
-}
+}}
