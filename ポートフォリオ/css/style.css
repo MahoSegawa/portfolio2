@@ -415,7 +415,7 @@ body {
     margin-right: auto;
     max-width: 720px;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 550px) {
     .Form {
       margin-top: 40px;
     }
@@ -428,13 +428,14 @@ body {
     display: flex;
     align-items: center;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 550px) {
     .Form-Item {
       padding-left: 14px;
       padding-right: 14px;
       padding-top: 16px;
       padding-bottom: 16px;
       flex-wrap: wrap;
+      box-sizing: border-box;
     }
   }
   /* .Form-Item:nth-child(5) {
@@ -446,7 +447,7 @@ body {
     font-weight: normal;
     font-size: 18px;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 550px) {
     .Form-Item-Label {
       max-width: inherit;
       display: flex;
@@ -458,7 +459,7 @@ body {
     margin-top: 8px;
     margin-bottom: auto;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 550px) {
     .Form-Item-Label.isMsg {
       margin-top: 0;
     }
@@ -474,7 +475,7 @@ body {
     color: #fff;
     font-size: 13px;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 550px) {
     .Form-Item-Label-Required {
       border-radius: 4px;
       padding-top: 4px;
@@ -495,7 +496,7 @@ body {
     background: #fafafa;
     font-size: 16px;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 550px) {
     .Form-Item-Input {
       margin-left: 0;
       margin-top: 18px;
@@ -515,8 +516,10 @@ body {
     max-width: 410px;
     background: #fafafa;
     font-size: 16px;
+    padding-top: 5px;
+    
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 550px) {
     .Form-Item-Textarea {
       margin-top: 18px;
       margin-left: 0;
@@ -543,7 +546,7 @@ body {
     cursor: pointer;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 550px) {
     .Form-Btn {
       margin-top: 24px;
       padding-top: 8px;
@@ -553,6 +556,9 @@ body {
     }
   }
 /* PCフッター */
+.sp-footer-container{
+    display: none;
+}
 .footer-container{
         color: #fff;
         background: #333333;
@@ -567,14 +573,16 @@ body {
 .footer-container a:hover {
     text-decoration: underline;
    }
+   
 .footer-container .footer-nav {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .footer-container .footer-nav li{
     margin: 0;
     padding:0 20px ;
@@ -611,7 +619,7 @@ body {
  }
 
 
-  .footer-container{
+.footer-container{
       padding-top: 50px;
   }
   .copyright{
@@ -841,20 +849,48 @@ body {
     }
 
       /* フッター */
+      .footer-container{
+          display: none;
+      }
+      .sp-footer-container{
+          display:block ;
+      }
       .page-top img {
         width: 100px;
         position:fixed;
         right: 10px;
-        bottom: 10px;
+        bottom: 50px;
       }
-      .footer-nav{
-          display: flex;
-      }
-      .footer-container .footer-nav li{
-          padding-top: 30px;
-      }
-
+      .sp-footer-container{
+        color: #fff;
+        background: #333333;
+        text-align: center;
+        padding: 30px;
     }
+  
+.sp-footer-container a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 14px;
+   }
+.sp-footer-container a:hover {
+    text-decoration: underline;
+   }
+   
+.sp-footer-container .sp-footer-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sp-footer-container .sp-footer-nav li{
+    margin: 0;
+    padding:10px 20px ;
+}
+
     
 /* SP表示550px */
 
@@ -902,13 +938,19 @@ body {
     .btn span {
         background: #333333;
     }
+    .open span::before{
+        background-color : #fff;
+    }
+    .open span::after{
+        background-color: #fff;
+    }
     #top-btn{
         width: 80px;
         height: 80px;
         right: 20px;
         bottom: 50px;
     }
-    
+
 /* SP表示375px*/
 @media screen and (max-width:375px){
     /* .fv-bg{
@@ -990,5 +1032,4 @@ body {
 }
 .pc-nav li:first-child {
         padding-left :100px;
-    }
-}}
+    }}}}

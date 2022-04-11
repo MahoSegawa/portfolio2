@@ -177,34 +177,58 @@
             <div class="Form">
                 <div class="Form-Item">
                     <div class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>お名前</div>
-                    <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
+                    <input type="text"name="entry.119347932" id="name" class="Form-Item-Input" placeholder="例）山田太郎">
                 </div>
                 <div class="Form-Item">
                     <div class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</div>
-                    <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+                    <input type="email" name="entry.1450516315" id="mail" class="Form-Item-Input" placeholder="例）example@gmail.com">
                 </div>
                 <div class="Form-Item">
                     <div class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</div>
-                    <textarea class="Form-Item-Textarea"></textarea>
+                    <textarea class="Form-Item-Textarea" name="entry.82384333" id="contents" placeholder="お問い合わせ内容が入ります"required></textarea>
                 </div>
                 <input type="submit" class="Form-Btn" value="送信する">
             </div>
         </form>
+        <script type="text/javascript">
+            var submitted = false;
+          </script>
+          <iframe
+            name="hidden_iframe"
+            id="hidden_iframe"
+            style="display: none"
+            onload="if(submitted)  {window.location='thanks.html';}"
+          ></iframe>    
+        
     </section>
+
     <footer>
         <div class=footer-container>
             <ul class="footer-nav">
-                <div class="left-nav">
+                <li><a href="#top">HOME</a></li>
+                <li><a href="#about">わたしについて</a></li>
+                <li><a href="#service">できること</a></li>
+                <li><a href="#works">制作実績</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+                <li><a href="https://twitter.com/oham_design"><i class="fab fa-twitter fa-lg"></i></a></li>
+                <li><a href="https://www.instagram.com/ohamdesign/?hl=ja"><i class="fab fa-instagram fa-lg"></i></a>
+                </ul>
+                <p class="copyright">© 2022 OHAM DESIGN</p>
+        </div>
+        <div class=sp-footer-container>
+            <ul class="sp-footer-nav">
+                <div class="footer-left">
                 <li><a href="#top">HOME</a></li>
                 <li><a href="#about">わたしについて</a></li>
                 <li><a href="#service">できること</a></li></div>
-                <div class="right-nav"><li><a href="#works">制作実績</a></li>
+                <div class="footer-right"><li><a href="#works">制作実績</a></li>
                 <li><a href="#contact">お問い合わせ</a></li>
                 <li><a href="https://twitter.com/oham_design"><i class="fab fa-twitter fa-lg"></i></a></li>
                 <li><a href="https://www.instagram.com/ohamdesign/?hl=ja"><i class="fab fa-instagram fa-lg"></i></a></div>
                 </ul>
-            <p class="copyright">© 2022 OHAM DESIGN</p>
+                <p class="copyright">© 2022 OHAM DESIGN</p>
         </div>
+
         <!-- <div id="top-btn"><a href="#top"><span class="arrow"></span><span class="top-text">TOP</span></a>
         </div> -->
         <div class="page-top"><a id="top-btn" href="#top">
@@ -245,7 +269,7 @@
                     if (appear == false) {
                         appear = true;
                         pagetop.stop().animate({
-                            'right': '50px' //右から0pxの位置に
+                            'right': '20px' //右から0pxの位置に
                         }, 200); //0.3秒かけて現れる
                     }
                 }
@@ -253,7 +277,7 @@
                     if (appear) {
                         appear = false;
                         pagetop.stop().animate({
-                            'right': '-150px' //右から-50pxの位置に
+                            'right': '-120px' //右から-50pxの位置に
                         }, 200); //0.3秒かけて隠れる
                     }
                 }
@@ -264,7 +288,7 @@
             });
         });
     </script>
-
+    
 </body>
 
 </html>
