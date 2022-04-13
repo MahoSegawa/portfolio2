@@ -197,7 +197,7 @@ body {
     background-repeat: no-repeat;
     /* background-position: top 0px right 0px; */
     min-height: 750px;
-    margin-bottom: 70px;
+    /* margin-bottom: 70px; */
 
 }
 .service-title{
@@ -250,6 +250,7 @@ body {
 .service-bg{
     padding-top: 80px;
 }
+
 /* .design-pc,.grafic-pc,.coding-pc{
     display: inline-block;
     height: 100px;
@@ -270,6 +271,7 @@ body {
 .works-title{
     text-align: center;
     margin-bottom: 50px;
+    margin-top: 70px;
     
 }
 .works-title span{
@@ -519,6 +521,11 @@ body {
     padding-top: 5px;
     
   }
+
+  /* サンクスページ */
+.contactH2{
+    align-items: center;
+}
   @media screen and (max-width: 550px) {
     .Form-Item-Textarea {
       margin-top: 18px;
@@ -758,8 +765,8 @@ body {
         margin: 40px 30px 0px 0px;
     }
 }
-/* PC表示767px */
-@media screen and (max-width:767px){
+/* PC表示770px */
+@media screen and (max-width:770px){
     .fv-text{
         display:block;
     }
@@ -811,16 +818,19 @@ body {
           width: 335px;
           margin-bottom: 50px;
       }
-      .service-bg{
-          height: 1600px;
-          padding-top: 40px;
-      }
+      #service{
+        background-image: url(../images/sp-service.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-position: top 0px right 0px; */
+        height: 1550px;}
+
       /* works */
       .works-title h2{
           margin-top: 5px;
       }
       .works-title{
-          margin-top: 0px;
+          margin-top: 60px;
 
       }
       .works-item{
@@ -896,7 +906,7 @@ body {
 
 @media screen and (max-width: 550px) {
     .fv-bg{
-        background-image: url(../images/fv-irast.png);
+        background-image: url(../images/fv-irast\ 13.12.53.png);
     }
     /* .fv-text h2{
         padding-left: 20px;
